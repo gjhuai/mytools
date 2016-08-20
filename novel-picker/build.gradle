@@ -1,0 +1,36 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+group = "org.tubez"
+version = "1.0"
+
+sourceCompatibility=1.8
+targetCompatibility=1.8
+
+[compileJava, compileTestJava]*.options*.compilerArgs = ["-Xlint:none"]
+[compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile "org.jsoup:jsoup:1.9.2"
+    testCompile "junit:junit:4.11"
+}
+
+// Include dependent libraries in archive.
+//mainClassName = ""
+
+jar {
+  manifest { 
+    attributes "Main-Class": "org.tubez.picker.NovelPicker"
+    attributes "Class-Path": "./"
+  }
+
+  from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+  
+  exclude('picker.properties')
+}
