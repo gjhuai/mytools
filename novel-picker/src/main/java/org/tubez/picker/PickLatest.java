@@ -30,7 +30,6 @@ public class PickLatest {
 
     public static void main(String[] args) {
     	pick();
-
     }
 
     public static void pick() {
@@ -78,7 +77,7 @@ public class PickLatest {
             	String newPos = result[1];
 
             	try {
-            		if (content.trim().length()!=0 && newPos.compareTo(newPos)>0){
+            		if (newPos.compareTo(pos)>0 && content.trim().length()!=0){
             			Mailman.sendQQMailFrom189(name, content);
             			writePos(name, newPos);
             			System.out.println("已发送："+name);
