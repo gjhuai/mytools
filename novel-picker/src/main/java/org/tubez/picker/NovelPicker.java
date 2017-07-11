@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
@@ -30,44 +29,11 @@ public class NovelPicker {
 	/**
 	 * 抓取总数
 	 */
-	private static int totalSum = 1;
-
+	static int totalSum = 1;
 	/**
 	 * 获取失败记录数
 	 */
-	private static int failureSum = 0;
-
-	/**
-	 * 测试入口
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		long startTime = System.currentTimeMillis();
-
-		ResourceBundle proMap = ResourceBundle.getBundle("picker");
-
-		// 目录页
-		String catalogUrl = proMap.getString("catalogUrl");
-		// 各章节的前缀
-		String urlPrefix = proMap.getString("urlPrefix");
-		// 保存路径
-		String filePath = proMap.getString("filePath");
-		// 屏蔽关键字
-		String[] shiftWord = proMap.getString("shiftWord").split("&");
-
-		// 解析目录所在页面元素 获取所有章节url
-		NovelPicker picker = new NovelPicker();
-		Map<String, String> urlMap = picker.getChapters(catalogUrl, urlPrefix);
-		// 通过所有章节url 获取每个章节内容并保存
-		picker.pickAllNovelText(filePath, urlMap, "UTF-8", shiftWord);
-
-		long endTime = System.currentTimeMillis();
-
-		System.out.println("The End ! totalSum:" + (totalSum - 1) + " failureSum:" + failureSum);
-		System.out.println("run time: " + (endTime - startTime) / 6000 + "s");
-	}
-
+	static int failureSum = 0;
 
 	/**
 	 * 获取所有章节
@@ -93,16 +59,16 @@ public class NovelPicker {
 			if (href.contains("javascript")) {
 				continue;
 			}
-			if (href.startsWith("/")) {
+			if (href.startsWith("/")) { // e.g. /2546/89898.html, 从根路径开始
 				href = siteUrl + href;
-			} else if (!href.startsWith("http")) {
+			} else if (!href.startsWith("http")) {	// e.g. 2546/89898.html, 从当前页面相对开始
 				href = siteUrl + subUrl.substring(0, subUrl.lastIndexOf('/')) + "/" + href;
 			}
 			if (!href.startsWith(urlPrefix)) {
 				continue;
 			}
-			String text = link.text().trim();
-			emap.put(text, href);
+			String chapterName = link.text().trim();
+			emap.put(chapterName, href);
 		}
 		System.out.println("URL Total：" + emap.size());
 		return emap;
@@ -171,7 +137,7 @@ public class NovelPicker {
 	/**
 	 * catch内容
 	 */
-	private String getSingleChapterText(String chapterName, String chapterUrl, String[] shiftWord) {
+	public String getSingleChapterText(String chapterName, String chapterUrl, String[] shiftWord) {
 		Element body = this.getHtmlDoc(chapterUrl).body();
 
 //		Elements brList = body.select("br");
@@ -185,8 +151,9 @@ public class NovelPicker {
 		html = pScript.matcher(html).replaceAll("");
 		
 		html = html.replaceAll("<.+?>", "");
-		html = html.replaceAll("&nbsp;", "");
-		String contents = html.replaceAll("\\s{15,}", "");
+		html = html.replaceAll("&nbsp;", " ");
+//		String contents = html;
+		String contents = html.replaceAll("\\s{60,}", "");
 
 		// 屏蔽关键词
 		for (String str : shiftWord) {

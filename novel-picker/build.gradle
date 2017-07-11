@@ -16,6 +16,7 @@ repositories {
 
 dependencies {
 	compile "org.jsoup:jsoup:1.9.2"
+	compile "javax.mail:mail:1.4.7"
     testCompile "junit:junit:4.11"
 }
 
@@ -24,7 +25,7 @@ dependencies {
 
 jar {
   manifest { 
-    attributes "Main-Class": "org.tubez.picker.NovelPicker"
+    attributes "Main-Class": "org.tubez.picker.PickAll"
     attributes "Class-Path": "./"
   }
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books>
+	<book name="道君" link="http://www.luoqiu.com/read/255200/" />
+	<!-- <book name="道君"  source="luoqiu" link="http://www.sanjiangge.com/book/96/96708/index.html" prefix="http://www.sanjiangge.com/book/96/96708/" /> -->
+
+	<book name="银狐" link="http://www.luoqiu.com/read/23523/" />
+	<!-- <book name="银狐"  source="shuhaha" link="http://www.79xs.com/Html/Book/154/154065/Index.html" prefix="http://www.79xs.com/Html/Book/154/154065/" /> -->
+
+</books>
