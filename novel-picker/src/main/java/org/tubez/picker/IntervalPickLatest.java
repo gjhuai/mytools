@@ -5,7 +5,7 @@ public class IntervalPickLatest {
 	public static void main(String[] args) throws InterruptedException {
 		while(true){
 			PickLatest.pick();
-			Thread.sleep(60*60*1000);
+			Thread.sleep(3*60*60*1000);
 		}
 
 	}

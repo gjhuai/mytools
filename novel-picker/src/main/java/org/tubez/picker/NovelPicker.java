@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
@@ -25,7 +26,8 @@ import org.jsoup.select.Elements;
  * @author GJH
  */
 public class NovelPicker {
-
+	private Logger logger = Logger.getLogger(NovelPicker.class.getCanonicalName());
+	
 	/**
 	 * 抓取总数
 	 */
@@ -85,7 +87,8 @@ public class NovelPicker {
 					.userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:23.0) Gecko/20100101 Firefox/23.0")
 					.get();
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.severe("无法连接到"+url+" --> "+e.getLocalizedMessage());
+			throw new RuntimeException(e);
 		}
 		return doc;
 	}
