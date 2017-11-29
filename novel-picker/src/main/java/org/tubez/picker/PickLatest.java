@@ -77,6 +77,7 @@ public class PickLatest {
             	try {
             		if (newPos.compareTo(pos)>0 && content.trim().length()!=0){
             			MailSender.sendQQMailFromJdgm(name, content);
+            			//MailSender.sendQQMailFromSina(name, content);
             			writePos(name, newPos);
             			System.out.println("已发送："+name);
             		} else {            			

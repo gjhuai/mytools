@@ -68,6 +68,11 @@ public class MailSender {
 				.send("jianghuai.guan@cdjdgm.com", "gjhuai@qq.com", subject, content);
     }
     
+    public static void sendQQMailFromSina(String subject, String content) throws AddressException, MessagingException {
+    	new MailSender("smtp.sina.cn", "25", "gjhuai@sina.cn", "sdjtuy7&")
+    	.send("gjhuai@sina.cn", "gjhuai@qq.com", subject, content);
+    }
+    
     public static void sendQQMailFrom163(String subject, String content) throws AddressException, MessagingException {
         /**
          * 设置smtp服务器以及邮箱的帐号和密码
