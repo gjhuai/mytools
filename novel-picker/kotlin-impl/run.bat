@@ -1,0 +1,1 @@
+kotlinc -script -cp lib\jsoup-1.9.2.jar NovelPicker.kts
