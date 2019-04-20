@@ -19,24 +19,22 @@ def getChapters(catalogUrl , urlPrefix, headers):
     
     #html = html.decode('utf-8')
     html = getHtml(catalogUrl , headers)
-    #soup =  BeautifulSoup(html,'lxml')
-    soup =  BeautifulSoup(html,'html.parser')
+    soup =  BeautifulSoup(html,'lxml')
 
     for link in soup.find_all('a'):
         href = link.get('href')
-        if href==None or href.strip()=='':
+        if href==None:
             continue
         if href.find("javascript")>-1 or href.startswith("#"):
             continue
 
         # e.g. /2546/89898.html, 从根路径开始
-        print(href)
         if href[0]=='/':
             href = siteUrl + href
         elif not href.startswith("http"):	# // e.g. 2546/89898.html, 从当前页面相对开始
             href = siteUrl + subUrl[0:subUrl.rindex('/')] + "/" + href;
 			
-        if not href.startswith(urlPrefix) or href.strip()==urlPrefix.strip():
+        if not href.startswith(urlPrefix):
             continue;
 
         emap[link.string] = href
@@ -49,9 +47,6 @@ def pickChapter(chapterUrl, headers, attrsFilters, excludeTags=[]):
     ({"data-foo": "value"})
     
     novelBody = soup.find(attrs=attrsFilters)
-    if (novelBody==None):
-        return ""
-    
     import re
     for tagName in excludeTags:
         for tag in novelBody.find_all(re.compile(tagName)):
@@ -67,7 +62,6 @@ def main(novel_list):
     basePath = ".\\"
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
     for novel in novel_list:
-        print(novel)
         if (novel['download']==True):
             url = novel['url']
             urlPrefix = novel['prefix']
@@ -80,7 +74,7 @@ def main(novel_list):
             with open(path, "w") as myfile:
                 myfile.write('')
             for (chName, chUrl) in chapters.items():
-                #print("Download: " + chName)
+                print("Download: " + chName)
                 print(chUrl)
                 novelText = pickChapter(chUrl, headers, attrsFilters, ['^h4'])
                 novelText = novelText.replace('\n\n\n', '')
@@ -97,21 +91,20 @@ def main1():
 
 novel_list = [
     {
-        'name':'乡野欲潮',
-        'url':'http://www.lfs025.com/xyycha/',
-        'prefix':'http://www.lfs025.com/xyycha/',
-        #'attrsFilters': {"id":"BookText"},
-        'attrsFilters': {"class":"content"},
+        'name':'汉乡',
+        'url':'http://www.hanxiangxiaoshuo.com/hanxiang/',
+        'prefix':'http://www.hanxiangxiaoshuo.com/book/',
+        'attrsFilters': {"id":"BookText"},
+        'excludeTags':['^h4'],
+        'download':False
+    },
+    {
+        'name':'novel',
+        'url':'http://www.5xxs.org/mulu.asp?id=27586',
+        'prefix':'http://www.5xxs.org/page.asp?id=2701',
+        'attrsFilters': {"class":"mview"},
         'excludeTags':['^h4'],
         'download':True
-    },
-    #{
-    #    'name':'novel',
-    #    'url':'http://www.5xxs.org/mulu.asp?id=27586',
-    #    'prefix':'http://www.5xxs.org/page.asp?id=2701',
-    #    'attrsFilters': {"class":"mview"},
-    #    'excludeTags':['^h4'],
-    #    'download':False
-    #}
+    }
 ]
 main(novel_list)
