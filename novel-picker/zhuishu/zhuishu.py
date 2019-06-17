@@ -95,7 +95,7 @@ def get_last_max_url_map(novel_list):
 def get_posted_chapter(last_max_url, novel):
     url = novel['url']
     urlPrefix = novel['prefix']
-    print("》》》获取【" + novel['name'] + "】的章节：")
+    print(datetime.datetime.now().strftime('[%m-%d %H:%M] ') + "获取【" + novel['name'] + "】的章节：")
     chapters = getChapters(url, urlPrefix).items()
 
     need_post_urls = []
@@ -129,7 +129,7 @@ def post_chapter(novel_list):
             if len(sorted_links)>0:
                 max_url_map[novel['name']] = sorted_links[-1]
             for link in sorted_links:
-                print("Posting [" + str(datetime.datetime.now()) +"]: " + link)
+                print(datetime.datetime.now().strftime('[%m-%d %H:%M]') + " Posting: " + link)
                 poster = pocket.PagePoster()
                 success = poster.post_page(link)
                 if success==-1:
