@@ -1,0 +1,13 @@
+!zhuishu.iml
+!.idea/
+.git/
+.gradle/
+out/
+bin/
+build/
+.settings/
+logs/
+.classpath
+*.project
+*.class
+

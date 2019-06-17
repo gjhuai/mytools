@@ -1,33 +1,34 @@
 # coding=utf-8
-import json,time, ssl
-import urllib.request, codecs
+
+import json, time, datetime, ssl
+import urllib.request
 from bs4 import BeautifulSoup
 import pocket
 
 novel_list = [
     {
-        'name':'汉乡',
-        'url':'https://www.biquge.com.cn/book/29843/',
-        'prefix':'https://www.biquge.com.cn/book/29843/',
-        'download':True
+        'name': '汉乡',
+        'url': 'https://www.biquge.com.cn/book/29843/',
+        'prefix': 'https://www.biquge.com.cn/book/29843/',
+        'download': True
     },
     {
-        'name':'大医凌然',
-        'url':'https://www.biquge.com.cn/book/32697/',
-        'prefix':'https://www.biquge.com.cn/book/32697/',
-        'download':True
+        'name': '大医凌然',
+        'url': 'https://www.biquge.com.cn/book/32697/',
+        'prefix': 'https://www.biquge.com.cn/book/32697/',
+        'download': True
     },
     {
-        'name':'医路坦途',
-        'url':'https://www.dingdiann.com/ddk176731/',
-        'prefix':'https://www.dingdiann.com/ddk176731/',
-        'download':True
+        'name': '医路坦途',
+        'url': 'https://www.dingdiann.com/ddk176731/',
+        'prefix': 'https://www.dingdiann.com/ddk176731/',
+        'download': True
     },
     {
-        'name':'放开那个女巫',
-        'url':'https://www.biquge.com.cn/book/16556/',
-        'prefix':'https://www.biquge.com.cn/book/16556/',
-        'download':True
+        'name': '放开那个女巫',
+        'url': 'https://www.biquge.com.cn/book/16556/',
+        'prefix': 'https://www.biquge.com.cn/book/16556/',
+        'download': False
     },
 
 ]
@@ -36,11 +37,13 @@ default_headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleW
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
+
 def getHtml(url, headers=default_headers):
     req = urllib.request.Request(url = url , headers = headers)
     res = urllib.request.urlopen(req)
     html = res.read()
     return html
+
 
 def getChapters(catalogUrl , urlPrefix, headers=default_headers):
     emap = {}
@@ -126,7 +129,7 @@ def post_chapter(novel_list):
             if len(sorted_links)>0:
                 max_url_map[novel['name']] = sorted_links[-1]
             for link in sorted_links:
-                print("Posting: " + link)
+                print("Posting [" + str(datetime.datetime.now()) +"]: " + link)
                 poster = pocket.PagePoster()
                 success = poster.post_page(link)
                 if success==-1:
