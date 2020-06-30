@@ -1,0 +1,29 @@
+; Author: gjhuai
+; Date: 2019-07-23
+; URL: http://cddyys.ddns.net:82/soft/tools/proxy-rule.txt
+
+#BEGIN
+
+[Wildcard]
+*google.com*
+*youtube.com*
+*ytimg.com*
+*blogspot.com*
+*blogger.com*
+*blogblog.com*
+*reddit.com*
+*twitter.com*
+*facebook.com*
+*seleniumhq*
+*gstatic.com*
+*medium.com*
+*quora.com*
+*apkpure.com*
+*googleapis*
+*wordpress.com*
+
+[RegExp]
+^http://code\.google\.com/.*
+youtube
+
+#END

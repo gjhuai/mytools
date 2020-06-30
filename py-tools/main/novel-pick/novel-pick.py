@@ -1,5 +1,5 @@
 # coding=gbk 
-import urllib.request, codecs
+import urllib.request, codecs, re
 from bs4 import BeautifulSoup
 
 def getHtml(url, headers):
@@ -97,11 +97,11 @@ def main1():
 
 novel_list = [
     {
-        'name':'乡野欲潮',
-        'url':'http://www.lfs025.com/xyycha/',
-        'prefix':'http://www.lfs025.com/xyycha/',
-        #'attrsFilters': {"id":"BookText"},
-        'attrsFilters': {"class":"content"},
+        'name':'yl',
+        'url':'http://www.dzwx520.com/book_8728/',
+        'prefix':'http://www.dzwx520.com/book_8728/',
+        #'attrsFilters': {"id":"content"},
+        'attrsFilters': {"class":"contentbox"},
         'excludeTags':['^h4'],
         'download':True
     },

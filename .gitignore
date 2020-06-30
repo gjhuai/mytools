@@ -1,4 +1,4 @@
-!zhuishu.iml
+!*.iml
 !.idea/
 .git/
 .gradle/
