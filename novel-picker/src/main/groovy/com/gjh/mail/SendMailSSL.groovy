@@ -1,13 +1,13 @@
-package org.tubez.picker;
+package com.gjh.mail
 
-import java.util.Properties;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
+import javax.mail.*
+import javax.mail.internet.InternetAddress
+import javax.mail.internet.MimeMessage
+
+
+@GrabResolver(name = 'aliyun', root = 'https://maven.aliyun.com/repository/public')
+@Grab('javax.mail:mail:1.5.0-b01')
+
 
 public class SendMailSSL {
 	Session session = null;

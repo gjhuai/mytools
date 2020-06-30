@@ -1,8 +1,9 @@
-package org.tubez.picker;
+package com.gjh.mail;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-import java.util.Properties;
+@GrabResolver(name = 'aliyun', root = 'https://maven.aliyun.com/repository/public')
+@Grab('javax.mail:mail:1.5.0-b01')
 
 
 public class SimpleSSLMail {
@@ -37,8 +38,7 @@ public class SimpleSSLMail {
 
         message.addRecipient(Message.RecipientType.TO, new InternetAddress(TO_MAIL));
 
-        transport.connect
-          (SMTP_HOST_NAME, SMTP_HOST_PORT, SMTP_AUTH_USER, SMTP_AUTH_PWD);
+        transport.connect(SMTP_HOST_NAME, SMTP_HOST_PORT, SMTP_AUTH_USER, SMTP_AUTH_PWD);
 
         transport.sendMessage(message,
             message.getRecipients(Message.RecipientType.TO));

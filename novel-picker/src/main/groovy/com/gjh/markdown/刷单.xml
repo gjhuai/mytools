@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<opml version="2.0">
+    <head>
+        <title>刷单</title>
+        <owername>GJH</owername>
+        <producer>XMind</producer>
+        <xmind-version>3.7.8</xmind-version>
+    </head>
+    <body>
+        <outline text="刷单">
+            <outline text="首页">
+                <outline text="滚动图片（首页设计）"/>
+                <outline text="实时兑换率"/>
+                <outline text="实时成交量"/>
+                <outline text="关于我们">
+                    <outline text="公司介绍"/>
+                    <outline text="量化交易"/>
+                    <outline text="服务协议"/>
+                    <outline text="隐私说明"/>
+                </outline>
+                <outline text="服务">
+                    <outline text="费率标准"/>
+                    <outline text="上币申请"/>
+                    <outline text="使用问题反馈"/>
+                </outline>
+            </outline>
+            <outline text="账户管理">
+                <outline text="密码修改"/>
+                <outline text="实名认证">
+                    <outline text="身份证验证"/>
+                </outline>
+                <outline text="邮箱绑定">
+                    <outline
+                            text="几个要点：&#10;① 接收客户的手机号码和邮箱激活码。&#10;② 先判断激活码是否有效。如果激活码无效，提示用户。&#10;③ 如果激活码有效，接下来就要判断用户是否在重复绑定邮箱，customer表中&#10;的type字段就是用来甄别邮箱是否已经激活，默认该字段的值是空值，如果type字段的值为1表示用户已经绑定邮箱。&#10;④ 如果用户没有绑定过邮箱，就完成邮箱的绑定。"
+                            type="note"/>
+                </outline>
+                <outline text="手机绑定">
+                    <outline text="需要发短信账号"/>
+                </outline>
+                <outline text="谷歌验证码"/>
+                <outline text="我的邀请码"/>
+                <outline text="交易机器人"/>
+                <outline text="登录记录"/>
+            </outline>
+            <outline text="资产中心">
+                <outline text="资金账户">
+                    <outline text="各币余额、可用、冻结、锁仓"/>
+                    <outline text="何为冻结、锁仓？"/>
+                </outline>
+                <outline text="资金流水"/>
+                <outline text="充币">
+                    <outline text="创建钱包地址"/>
+                    <outline text="充币"/>
+                    <outline text="BTC/ETH自动兑换成USDT"/>
+                </outline>
+                <outline text="提币"/>
+                <outline text="转送"/>
+                <outline text="购买"/>
+            </outline>
+            <outline text="交易">
+                <outline text="挂单（买/卖）"/>
+                <outline text="下单买入"/>
+                <outline text="下单卖出"/>
+                <outline text="交易撮合"/>
+                <outline text="交易行情(WCT/UMQ/GDT)">
+                    <outline text="行情概述">
+                        <outline text="最新价"/>
+                        <outline text="24H涨跌幅"/>
+                        <outline text="24H最高"/>
+                        <outline text="24H最低"/>
+                        <outline text="24H成交量"/>
+                    </outline>
+                    <outline text="挂单行情">
+                        <outline text="卖出挂单"/>
+                        <outline text="买入挂单"/>
+                    </outline>
+                    <outline text="成交历史"/>
+                    <outline text="图形">
+                        <outline text="美国线"/>
+                        <outline text="K线图"/>
+                        <outline text="空心K线图"/>
+                        <outline text="平均K线图"/>
+                        <outline text="线形图"/>
+                        <outline text="面积图"/>
+                        <outline text="基准线"/>
+                    </outline>
+                    <outline text="指标">
+                        <outline text="EMA交叉"/>
+                        <outline text="MACD"/>
+                        <outline text="MA与EAM交叉"/>
+                        <outline text="SMI 遍历性指标(SMI Ergodic Indicator/Oscillator)"/>
+                        <outline text="SuperTrend"/>
+                        <outline text="一目均衡图(Ichimoku Cloud)"/>
+                        <outline text="三重指数平滑平均线(Triple EMA)"/>
+                        <outline text="三重指数平滑移动平均线(TRIX)"/>
+                        <outline text="之字转向(Zig Zag)"/>
+                        <outline text="价格摆动指标(Price Oscillator)"/>
+                        <outline text="价格通道(Price Channel)"/>
+                        <outline text="价量趋势指标(Price Volume Trend)"/>
+                        <outline text="估波曲线(Coppock Curve)"/>
+                        <outline text="克林格成交量摆动指标(Klinger Oscillator)"/>
+                        <outline text="净成交量(Net Volume)"/>
+                        <outline text="加权总和变动率(Know Sure Thing)"/>
+                        <outline text="加权移动平均线(Moving Average Weighted)"/>
+                        <outline text="动向指标(Directional Movement)"/>
+                        <outline text="动量指标(Momentum)"/>
+                        <outline text="动量震荡指标(Awesome Oscillator)"/>
+                        <outline text="包络线(Envelope)"/>
+                        <outline text="历史波动率(Historical Volatility)"/>
+                        <outline text="双指数移动平均线(Double EMA)"/>
+                        <outline text="变化速率(Rate Of Change)"/>
+                        <outline text="唐奇安通道(Donchian Channels)"/>
+                        <outline text="商品路径指标(Commodity Channel Index)"/>
+                        <outline text="均势指标(Balance of Power)"/>
+                        <outline text="威廉姆斯分形指标(Williams Fractal)"/>
+                        <outline text="威廉姆斯指标(Williams %R)"/>
+                        <outline text="威廉姆斯鳄鱼线(Williams Alligator)"/>
+                        <outline text="布林带 %B(Bollinger Bands %B)"/>
+                        <outline text="布林带(Bollinger Bands)"/>
+                        <outline text="布林带宽度(Bollinger Bands Width)"/>
+                        <outline text="平均趋向指数(Average Directional Index)"/>
+                        <outline text="平滑移动平均线(Smoothed Moving Average)"/>
+                        <outline text="康纳相对强弱指指数(CRSI)"/>
+                        <outline text="成交量(Volume)"/>
+                        <outline text="成交量加权平均价(VWAP)"/>
+                        <outline text="成交量加权移动平均值(VWMA)"/>
+                        <outline text="成交量摆动指标(Volume Oscillator)"/>
+                        <outline text="抛物线转向指标(Parabolic SAR)"/>
+                        <outline text="指数移动平均线(Moving Average Exponential)"/>
+                        <outline text="振动升降指标(ASI)"/>
+                        <outline text="旋涡指标(Vortex Indicator)"/>
+                        <outline text="最小二乘移动平均线(Least Squares Moving Average)"/>
+                        <outline text="梅斯线(Mass Index)"/>
+                        <outline text="波动区间(Chop Zone)"/>
+                        <outline text="波动指数(Choppiness Index)"/>
+                        <outline text="涨跌比(Advance/Decline)"/>
+                        <outline text="相关系数(Correlation Coefficient)"/>
+                        <outline text="相对强弱指标(Relative Strength Index)"/>
+                        <outline text="相对离散指数(Relative Volatility Index)"/>
+                        <outline text="相对能量指数(Relative Vigor Index)"/>
+                        <outline text="真实强度指标(True Strength Indicator)"/>
+                        <outline text="真实波动幅度均值(Average True Range)"/>
+                        <outline text="移动平均线(Moving Average)"/>
+                        <outline text="移动平均线通道(Moving Average Channel)"/>
+                        <outline text="移动揉搓线(MA Cross)"/>
+                        <outline text="简易波动指标(Ease Of Movement)"/>
+                        <outline text="累积/派发线(Accumulation/Distribution)"/>
+                        <outline text="线性回归曲线(Linear Regression Curve)"/>
+                        <outline text="终极波动指标(Ultimate Oscillator)"/>
+                        <outline text="肯特纳通道(Keltner Channels)"/>
+                        <outline text="能量潮指标(On Balance Volume)"/>
+                        <outline text="船体移动平均线(Hull Moving Average)"/>
+                        <outline text="艾达尔强力指数(Elder's Force Index)"/>
+                        <outline text="蔡金资金流量(Chaikin Money Flow)"/>
+                        <outline text="蔡金资金流量震荡指标(Chaikin Oscillator)"/>
+                        <outline text="费舍尔转换(Fisher Transform)"/>
+                        <outline text="资金流量(Money Flow)"/>
+                        <outline text="金利动态指标(McGinley Dynamic)"/>
+                        <outline text="钱德克罗止损(Chande Kroll Stop)"/>
+                        <outline text="钱德动量摆动指标(Chande Momentum Oscillator)"/>
+                        <outline text="阿诺勒古移动平均线(Arnaud Legoux Moving Average)"/>
+                        <outline text="阿隆指标(Aroon)"/>
+                        <outline text="随机指数(Stochastic)"/>
+                        <outline text="随机相对强弱指数(Stoch RSI)"/>
+                        <outline text="非趋势价格摆动指标(Detrended Price Oscillator)"/>
+                    </outline>
+                </outline>
+            </outline>
+            <outline text="订单中心">
+                <outline text="已完成订单"/>
+                <outline text="当前订单"/>
+            </outline>
+            <outline text="消息接收"/>
+            <outline text="后台管理">
+                <outline text="发送消息"/>
+                <outline text="机器人下单？"/>
+            </outline>
+        </outline>
+    </body>
+</opml>

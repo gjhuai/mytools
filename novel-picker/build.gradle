@@ -1,31 +1,37 @@
-apply plugin: "java"
-apply plugin: "eclipse"
+plugins {
+    id 'groovy'
+}
 
-group = "org.tubez"
-version = "1.0"
+group 'com.gjh'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility=1.8
 targetCompatibility=1.8
 
-[compileJava, compileTestJava]*.options*.compilerArgs = ["-Xlint:none"]
-[compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+[compileGroovy, compileTestGroovy]*.options*.encoding = "UTF-8"
 
 repositories {
-    mavenCentral()
+    maven { url "https://maven.aliyun.com/repository/public" }
 }
 
 dependencies {
-	compile "org.jsoup:jsoup:1.9.2"
-	compile "javax.mail:mail:1.4.7"
-    testCompile "junit:junit:4.11"
+    compile 'org.codehaus.groovy:groovy-all:3.0.4'
+    compile 'org.apache.ivy:ivy:2.5.0'
+    testCompile 'junit:junit:4.13'
 }
 
-// Include dependent libraries in archive.
-//mainClassName = ""
+dependencies {
+	//compile "org.jsoup:jsoup:1.9.2"
+	//compile "javax.mail:mail:1.4.7"
+    testCompile "junit:junit:4.13"
+}
+
+
+apply from: "ide.gradle"
 
 jar {
   manifest { 
-    attributes "Main-Class": "org.tubez.picker.PickAll"
+    attributes "Main-Class": "org.tubez.novel.PickAll"
     attributes "Class-Path": "./"
   }
 
@@ -33,5 +39,5 @@ jar {
     configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
   }
   
-  exclude('picker.properties')
+  exclude('novel.properties')
 }

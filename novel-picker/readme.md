@@ -1,9 +1,5 @@
-## 编译
-gradle jar
-生成jar包在build/libs目录下
-
 ## 运行
-将pick.bat、picker.properties拷贝到build/libs，运行pick.bat即可
+pick.bat、picker.properties，运行pick.bat即可
 
 ## picker.properties配置
 
