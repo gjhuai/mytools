@@ -5,7 +5,9 @@ bin/
 build/
 .settings/
 logs/
+*.log
 .classpath
 *.project
 *.class
+*.pyc
 
