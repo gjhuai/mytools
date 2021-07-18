@@ -1,6 +1,6 @@
 .git/
 .gradle/
-out/
+
 bin/
 build/
 .settings/
@@ -9,3 +9,14 @@ logs/
 *.project
 *.class
 
+
+
+# Maven
+target/
+
+# IDEA
+*.iws
+*.ipr
+*.iml
+.idea/
+out/

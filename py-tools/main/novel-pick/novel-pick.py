@@ -121,6 +121,17 @@ novel_list = [
         #'attrsFilters': {"id":"content"},
         'attrsFilters': {"class":"contentbox"},
         'excludeTags':['^h4'],
+        'download':False
+    },
+    {
+        'name':'yl',
+        'url':'https://www.shubao3.info/0/1050/',
+        'catalogPattern': '<li class="chapter">\s*<a href="([^"\']+?)">(.+?)</a>\s*</li>',
+        #'catalogPattern': '<li><a href="([^"\']+?)" title=".+?" target="_blank">(.+?)</a></li>',
+        'prefix':'https://www.shubao3.info/0/1050/',
+        'attrsFilters': {"id":"htmlContent"},
+        #'attrsFilters': {"class":"contentbox"},
+        'excludeTags':['^h4'],
         'download':True
     },
     #{
