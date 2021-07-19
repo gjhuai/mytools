@@ -1,40 +1,31 @@
 # coding=utf-8 
 import urllib.request, codecs, re, time, requests, collections
 from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
 
 class Picker(object):
-    headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
+    headers = {"User-Agent":UserAgent(verify_ssl=False).chrome}
     FAILED = "FAILED"
     retry_num = 3
 
     def __init__(self):
+        with open("debug.log", "w") as myfile:
+            myfile.write("")
         self.chapter_map = collections.OrderedDict()
 
-    def __get_html_content(self, url, headers):
+    def get_html_content(self, url, encoding='gb18030', headers=headers):
         now = time.strftime("%H:%M:%S", time.localtime())
-        print(url+" " + str(now))
+        self.log("下载： " + url+" " + str(now))
 
-        r = requests.get(url, headers=headers, timeout=30)
-        r.encoding = 'gb18030'
+        r = requests.get(url, headers, timeout=30)
+        r.encoding = encoding
         html_text = r.text
         self.log(html_text)
         # html_text = str(html, encoding = "gbk")
         return html_text
 
-    def __get_html_content2(self, url, headers):
-        now = time.strftime("%H:%M:%S", time.localtime())
-        print(url+" " + str(now))
-
-        req = urllib.request.Request(url = url , headers = headers)
-        print('aaaaa')
-        with urllib.request.urlopen(req, timeout=30) as response:
-            html = response.read()
-        print('bbbbb')
-        html_text = str(html, encoding = "gbk")
-        return html_text
-
-    def __get_chapter_urls(self, catalogUrl , catalog_pattern):
-        html = self.__get_html_content(catalogUrl , Picker.headers)
+    def get_lastest_urls(self, catalogUrl , catalog_pattern):
+        html = self.get_html_content(catalogUrl)
 
         pattern = re.compile(catalog_pattern)
         matchs = pattern.finditer(html)
@@ -48,7 +39,7 @@ class Picker(object):
         return self.chapter_map
 
     def get_chapter_content(self, chapterUrl, attrsFilters, excludeTags=[]):
-        html = self.__get_html_content(chapterUrl, Picker.headers)
+        html = self.get_html_content(chapterUrl)
         soup =  BeautifulSoup(html,'lxml')
         novelBody = soup.find(attrs=attrsFilters)
         if (novelBody==None):
@@ -80,7 +71,7 @@ class Picker(object):
             excludeTags = novel['excludeTags']
 
             print("》》》获取【"+ novel['name'] + "】的章节：")
-            self.chapter_map = self.__get_chapter_urls(url , catalog_pattern)
+            self.chapter_map = self.get_lastest_urls(url , catalog_pattern)
             path = basePath+ novel['name'] + ".txt"
             with open(path, "w") as myfile:
                 myfile.write('')
@@ -126,17 +117,6 @@ novel_list = [
         #'attrsFilters': {"id":"content"},
         'attrsFilters': {"class":"txt", "id":"txt"},
         'excludeTags':['^h4'],
-        'download':False
-    },
-    {
-        'name':'yl',
-        'url':'https://www.shubao3.info/0/1050/',
-        'catalogPattern': '<li class="chapter">\s*<a href="([^"\']+?)">(.+?)</a>\s*</li>',
-        #'catalogPattern': '<li><a href="([^"\']+?)" title=".+?" target="_blank">(.+?)</a></li>',
-        'prefix':'https://www.shubao3.info/0/1050/',
-        'attrsFilters': {"id":"htmlContent"},
-        #'attrsFilters': {"class":"contentbox"},
-        'excludeTags':['^h4'],
         'download':True
     },
     #{
@@ -149,6 +129,6 @@ novel_list = [
     #}
 ]
 
-picker = Picker()
-for novel in novel_list:
-    picker.download(novel)
+# picker = Picker()
+# for novel in novel_list:
+#     picker.download(novel)

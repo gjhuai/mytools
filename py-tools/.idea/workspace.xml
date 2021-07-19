@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1808ceaa-b1db-439a-9d02-7396278a1f25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/novel-pick/novel-pick.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/novel-pick/novel-pick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py-tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/py-tools.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,112 +16,62 @@
     <SUITE FILE_PATH="coverage/py_tools$novel_pick2.coverage" NAME="novel-pick2 Coverage Results" MODIFIED="1593512445548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/novel-pick" />
     <SUITE FILE_PATH="coverage/py_tools$novel_pick.coverage" NAME="novel-pick Coverage Results" MODIFIED="1593505526483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/novel-pick" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>return</find>
-      <find>getChapters</find>
-      <find>MULTILINE</find>
-      <find>timeout</find>
-      <find>get_chapter_content</find>
-      <find>saveTxt</find>
-      <find>__get_chapter_urls</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>get_chapter_content</replace>
-      <replace>get_chapter_urls</replace>
-      <replace>get_html_content</replace>
-    </replaceStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/main/novel-pick/novel-pick.py" />
-        <option value="$PROJECT_DIR$/main/novel-pick/novel-pick2.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1615" />
-    <option name="height" value="915" />
-  </component>
+  <component name="JupyterTrust" id="cb076562-99b8-4695-a801-876f8f70b8ca" />
+  <component name="ProjectId" id="1sb5Nu2H1UpBWQPYNtrCFdydfsg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="py-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py-tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="py-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="py-tools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py-tools" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="novel-pick" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593512998308" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="D:/exchange/wankoko交付/ex_trade/ex-admin" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1507799" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\_my\mytools\py-tools\main" />
+      <recent name="D:\Code\_my\mytools\py-tools\main\info" />
       <recent name="E:\_mycode\mytools\py-tools\main\novel-pick" />
       <recent name="E:\_mycode\mytools\py-tools\main" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.novel-pick2">
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
+  <component name="RunManager" selected="Python.syncftp">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="novel-pick" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="gatherer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="py-tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,12 +91,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/novel-pick" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/info" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/novel-pick/novel-pick.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/info/gatherer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="novel-pick2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="syncftp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="py-tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,12 +113,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/novel-pick" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/syncftp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/novel-pick/novel-pick2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/syncftp/syncftp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,14 +126,93 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+    </configuration>
+    <configuration name="syncftp2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="py-tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/syncftp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/syncftp/syncftp2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testftp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="py-tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/syncftp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/syncftp/testftp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="xueqiu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="py-tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/info" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/info/xueqiu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.novel-pick2" />
-        <item itemvalue="Python.novel-pick" />
+        <item itemvalue="Python.syncftp" />
+        <item itemvalue="Python.testftp" />
+        <item itemvalue="Python.syncftp2" />
+        <item itemvalue="Python.gatherer" />
+        <item itemvalue="Python.xueqiu" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1808ceaa-b1db-439a-9d02-7396278a1f25" name="Default Changelist" comment="" />
@@ -192,111 +221,126 @@
       <option name="presentableId" value="Default" />
       <updated>1593501558028</updated>
       <workItem from="1593501562045" duration="11226000" />
-      <workItem from="1598105804766" duration="308000" />
-      <workItem from="1604379557178" duration="913000" />
+      <workItem from="1593565384337" duration="110000" />
+      <workItem from="1621128414609" duration="726000" />
+      <workItem from="1621129277632" duration="964000" />
+      <workItem from="1621131210777" duration="712000" />
+      <workItem from="1621132664348" duration="88000" />
+      <workItem from="1621132759364" duration="459000" />
+      <workItem from="1621133244721" duration="221000" />
+      <workItem from="1621133489942" duration="183000" />
+      <workItem from="1621133683242" duration="224000" />
+      <workItem from="1621133923488" duration="50089000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12447000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.25321338" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info id="JRebel" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Flutter Performance" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Tail" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4385475" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
-      <window_info anchor="right" id="Flutter Inspector" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Flutter Outline" order="2" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Maven" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" weight="0.25" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Flutter Performance" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Tail" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Debug" order="9" visible="true" weight="0.4385475" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Flutter Inspector" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Flutter Outline" order="2" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Maven" order="7" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="99" key="#Project_Structure" timestamp="1621136469582">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="99" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1621136469582" />
+    <state x="682" y="333" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621176509578">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="682" y="333" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1621176509578" />
+    <state width="1754" height="516" key="DebuggerActiveHint" timestamp="1621321972205">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1644" height="482" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1621177382435" />
+    <state width="1754" height="516" key="DebuggerActiveHint/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621321972205" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1621134678344">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1621134678344" />
+    <state width="2005" height="361" key="GridCell.Tab.0.bottom" timestamp="1621324227452">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621179892856" />
+    <state width="2005" height="361" key="GridCell.Tab.0.bottom/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621324227452" />
+    <state width="2005" height="361" key="GridCell.Tab.0.center" timestamp="1621324227452">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="181" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621179892856" />
+    <state width="2005" height="361" key="GridCell.Tab.0.center/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621324227452" />
+    <state width="2005" height="361" key="GridCell.Tab.0.left" timestamp="1621324227452">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="181" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621179892856" />
+    <state width="2005" height="361" key="GridCell.Tab.0.left/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621324227452" />
+    <state width="2005" height="361" key="GridCell.Tab.0.right" timestamp="1621324227452">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="181" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621179892856" />
+    <state width="2005" height="361" key="GridCell.Tab.0.right/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621324227452" />
+    <state width="2005" height="243" key="GridCell.Tab.1.bottom" timestamp="1621322673512">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="224" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621179486001" />
+    <state width="2005" height="243" key="GridCell.Tab.1.bottom/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621322673512" />
+    <state width="2005" height="243" key="GridCell.Tab.1.center" timestamp="1621322673512">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="224" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621179486001" />
+    <state width="2005" height="243" key="GridCell.Tab.1.center/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621322673512" />
+    <state width="2005" height="243" key="GridCell.Tab.1.left" timestamp="1621322673512">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="224" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621179486001" />
+    <state width="2005" height="243" key="GridCell.Tab.1.left/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621322673512" />
+    <state width="2005" height="243" key="GridCell.Tab.1.right" timestamp="1621322673512">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state width="1877" height="224" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621179486001" />
+    <state width="2005" height="243" key="GridCell.Tab.1.right/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621322673512" />
+    <state x="666" y="126" key="SettingsEditor" timestamp="1621133945231">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="666" y="126" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1621133945231" />
+    <state x="746" y="303" width="540" height="540" key="StructurePopup" timestamp="1621323934073">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="746" y="303" width="540" height="540" key="StructurePopup/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621323934073" />
+    <state x="804" y="313" key="refactoring.ChangeSignatureDialog" timestamp="1621142229424">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="804" y="313" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1621142229424" />
+    <state x="681" y="261" key="run.anything.popup" timestamp="1621217966982">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="681" y="261" key="run.anything.popup/2560.0.1920.1042/0.0.2048.1122@0.0.2048.1122" timestamp="1621217966982" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main/novel-pick/novel-pick.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/main/zhuishu/zhuishu.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/python-impl/2.txt" />
-    <entry file="file://$PROJECT_DIR$/main/novel-pick/novel-pick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py" />
-    <entry file="file://$USER_HOME$/.IntelliJIdea2018.3/system/python_stubs/-1534851573/builtins.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/socket.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/urllib/request.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/api.py" />
-    <entry file="file://$PROJECT_DIR$/main/novel-pick/novel-pick2.py" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/py_tools$gatherer.coverage" NAME="gatherer Coverage Results" MODIFIED="1621222377840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/info" />
+    <SUITE FILE_PATH="coverage/py_tools$test.coverage" NAME="test Coverage Results" MODIFIED="1621152158453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/info" />
+    <SUITE FILE_PATH="coverage/py_tools$syncftp.coverage" NAME="syncftp Coverage Results" MODIFIED="1621324227443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/syncftp" />
+    <SUITE FILE_PATH="coverage/py_tools$syncftp2.coverage" NAME="syncftp2 Coverage Results" MODIFIED="1621322089448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/syncftp" />
+    <SUITE FILE_PATH="coverage/py_tools$xueqiu.coverage" NAME="xueqiu Coverage Results" MODIFIED="1621217760384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/info" />
+    <SUITE FILE_PATH="coverage/py_tools$testftp.coverage" NAME="testftp Coverage Results" MODIFIED="1621322673503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/syncftp" />
+    <SUITE FILE_PATH="coverage/py_tools$t2.coverage" NAME="t2 Coverage Results" MODIFIED="1621179575659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/info" />
   </component>
 </project>
